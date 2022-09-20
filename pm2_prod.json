@@ -1,0 +1,17 @@
+{
+	"apps": [
+		{
+			"name"      : "modern-financial",
+			"script"    : "app.js",
+			"exec_mode" : "fork",
+			"watch"     : false,
+			"log_date_format": "YYYY-MM-DD HH:mm:ss.SSS",
+			"out_file": "~/.pm2/logs/modern-financial.log",
+			"error_file": "~/.pm2/logs/modern-financial.log",
+			"max_memory_restart": "512M",
+			"env" : {
+				"NODE_ENV": "production"
+			}
+		}
+	]
+}
